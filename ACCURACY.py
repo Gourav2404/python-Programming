@@ -1,5 +1,3 @@
-# cook your dish here
-# cook your dish here
 a=int(input())
 for r in range(a):
     b=int(input())
