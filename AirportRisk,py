@@ -1,0 +1,13 @@
+# num = [1,0,2,0,1,0,2]
+num = [2,1,0,2,1,0,0,1,2,0]
+length = len(num)
+for i in range(length):
+    test = i
+    for j in range(i+1 , length):
+        # print(num[i] , num[j])
+        if num[test] > num[j]:
+            test = j
+            #print(num[i] , num[i+1])
+    num[i] , num[test] = num[test] , num[i]
+    
+print("sorted array : ", num)
